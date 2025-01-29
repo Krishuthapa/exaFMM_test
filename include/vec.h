@@ -8,7 +8,7 @@ const int SIMD_BYTES = 64;
 const int SIMD_BYTES = 32;
 #elif __SSE__
 const int SIMD_BYTES = 16;
-#elif __arch64__
+#elif __aarch64__
 const int SIMD_BYTES = 16;
 #else
 #error no SIMD
